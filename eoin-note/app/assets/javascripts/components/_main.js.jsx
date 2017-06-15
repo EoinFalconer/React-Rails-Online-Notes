@@ -25,6 +25,7 @@ var Main = React.createClass({
         })
 
     },
+
     updateNote(title, content){
         var editedNote = this.state.currentNote
         editedNote.title = title
@@ -33,10 +34,19 @@ var Main = React.createClass({
         this.state.notes[this.state.currentNote.id] = editedNote
 
 
-        this.setState({
-            currentNote: editedNote
+        $.ajax({
+            url: `/api/v1/notes/${this.state.currentNote.id}`,
+            type: 'PUT',
+            data: { note: this.state.currentNote },
+            success: () => {
+                this.setState({
+                    currentNote: editedNote
+                })
+            }
         })
     },
+
+
     render() {
         return (
             <div className="row">
