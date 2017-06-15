@@ -4,4 +4,5 @@ Rails.application.routes.draw do
       resources :notes, only: [:index, :create, :destroy, :update]
     end
   end
+  root to: 'site#index'
 end
