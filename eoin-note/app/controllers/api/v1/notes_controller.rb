@@ -7,7 +7,7 @@ class Api::V1::NotesController < Api::V1::BaseController
 
   # /api/create ~> POST: create new note
   def create
-    respond_with :api, Note.create(note_params)
+    respond_with :api, :v1, Note.create(note_params)
   end
 
   # /api/destroy ~> POST: destroy note

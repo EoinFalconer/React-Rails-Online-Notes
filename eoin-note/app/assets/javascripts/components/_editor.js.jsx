@@ -1,16 +1,20 @@
 var Editor = React.createClass({
 
-    getDefaultProps() {
+    getInitialState() {
         return {
-            currentContent: "Here is the currentContent",
-            currentTitle: "Here is the currentTitle"
+            currentContent: "Initial",
+            currentTitle: "Initial title"
         }
+    },
+    onChange: function() {
+
     },
     render() {
         return (
             <div>
-                <h2>{this.props.currentTitle}</h2>
-                <textarea>{this.props.currentContent}</textarea>
+
+                <h2>{this.state.currentTitle}</h2>
+                <textarea onChange={this.onChange} value={this.state.currentTitle}></textarea>
             </div>
         )
     }
