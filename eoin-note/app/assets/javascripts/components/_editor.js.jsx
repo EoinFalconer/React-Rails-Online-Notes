@@ -12,9 +12,8 @@ var Editor = React.createClass({
     render() {
         return (
             <div>
-
-                <h2>{this.state.currentTitle}</h2>
-                <textarea onChange={this.onChange} value={this.state.currentTitle}></textarea>
+                <input value={this.props.currentNote.title}></input>
+                <textarea onChange={this.onChange} value={this.props.currentNote.content}></textarea>
             </div>
         )
     }

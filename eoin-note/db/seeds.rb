@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-10.times { Note.create!(content: "Content of the note.", title: "Title of the note", lastEdited: DateTime.parse("09/01/2017 17:00")) }
+10.times { Note.create!(content: "Content of the note.", title: "Title of the note" ) }

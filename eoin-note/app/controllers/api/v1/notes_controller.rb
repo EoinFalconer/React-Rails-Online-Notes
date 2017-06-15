@@ -25,7 +25,7 @@ class Api::V1::NotesController < Api::V1::BaseController
   private
 
   def note_params
-    params.require(:note).permit(:id, :content, :title, :lastEdited)
+    params.require(:note).permit(:id, :content, :title)
   end
 
 end
