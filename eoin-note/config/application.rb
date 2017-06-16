@@ -16,3 +16,7 @@ module EoinNote
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+EoinNote::Application.configure do
+  config.react.addons = true # defaults to false
+end
