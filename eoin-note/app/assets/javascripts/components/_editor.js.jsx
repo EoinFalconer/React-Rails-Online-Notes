@@ -11,8 +11,12 @@ var Editor = React.createClass({
     render() {
         return (
             <div>
-                <input onChange={this.onTitleChange} value={this.props.currentNote.title}></input>
-                <textarea onChange={this.onContentChange} value={this.props.currentNote.content}></textarea>
+                <div className="options-bar">
+                    <div className="delete">Delete</div>
+                    <div className="date">{this.props.currentNote.created_at}</div>
+                </div>
+                <input className="title-editor" onChange={this.onTitleChange} value={this.props.currentNote.title}></input>
+                <textarea className="content-editor" onChange={this.onContentChange} value={this.props.currentNote.content}></textarea>
             </div>
         )
     }

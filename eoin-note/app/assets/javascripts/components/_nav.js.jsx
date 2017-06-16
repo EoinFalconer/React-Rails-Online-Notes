@@ -24,16 +24,19 @@ var Nav = React.createClass({
             }
             return (
                 <li key={note.id} onClick={() => this.props.openInEditor(note)}><div>
-                    <p>{note.updated_at}</p>
-                    <h2>{note.title}</h2>
-                    <p>{firstLine}{note.id}</p>
+                    <p><strong>{note.title}</strong></p>
+                    <p>{firstLine}</p>
+                    <div className="date">{note.updated_at}</div>
                 </div></li>
             )
         });
         return (
             <div>
-                <button onClick={this.handleClick}>New Note</button>
-                <ul>
+                <div className="search-container">
+                    <input value="Search"></input>
+                    <button onClick={this.handleClick}>New Note</button>
+                </div>
+                <ul className="scrollable-nav">
                     {notes}
                 </ul>
             </div>

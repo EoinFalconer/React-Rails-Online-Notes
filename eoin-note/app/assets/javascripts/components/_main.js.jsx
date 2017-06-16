@@ -19,7 +19,6 @@ var Main = React.createClass({
         this.setState({ notes: sortedNewState });
     },
     openInEditor(note) {
-        console.log("openInEditor: " + note.id);
         this.setState({
             currentNote: note
         })
@@ -49,11 +48,11 @@ var Main = React.createClass({
 
     render() {
         return (
-            <div className="row">
-                <div className="desktop-6 tablet-3 mobile-3">
+            <div className="row" style={{width: "100%"}}>
+                <div className="nav-container">
                     <Nav openInEditor={this.openInEditor} handleNew={this.handleNew} notes={this.state.notes}/>
                 </div>
-                <div className="desktop-6 tablet-3 mobile-3">
+                <div className="editor-container">
                     <Editor updateNote={this.updateNote} currentNote={this.state.currentNote} />
                 </div>
             </div>
