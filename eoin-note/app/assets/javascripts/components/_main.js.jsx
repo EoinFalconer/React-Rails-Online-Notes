@@ -1,4 +1,14 @@
 var Main = React.createClass({
+    static: {
+      initialContentVariantsMap: {
+          0: "You should probably write something here.",
+          1: "Good thing you have EoinNote.",
+          2: "Eoin has got your back, start typing.",
+          3: "Notes - my favourite part of the day",
+          4: "Did you know EoinNote loves you?",
+          5: "Hvis du er fra Norge, hallo!"
+      }
+    },
     getInitialState() {
         return { notes: [], currentNote: {content: "", title: ""} }
     },
@@ -14,7 +24,9 @@ var Main = React.createClass({
 
     },
     createNote: function(){
-        var content    = "No additional Text";
+        var contentMapIndex = Math.floor(Math.random() * (5 - 0) + 0);
+        console.log(contentMapIndex);
+        var content  = this.static.initialContentVariantsMap[contentMapIndex];
         var title = "New Note";
         $.ajax({
             url: '/api/v1/notes',

@@ -17,16 +17,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_main.js.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_main.js.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="465">
+              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
-                <marker date="1497621711000" expanded="true" signature="2860:3306" ph="..." />
-                <marker date="1497621711000" expanded="true" signature="2908:3083" ph="..." />
-                <marker date="1497621711000" expanded="true" signature="3060:3077" ph="..." />
-                <marker date="1497621711000" expanded="true" signature="3134:3287" ph="..." />
+                <marker date="1497632207000" expanded="true" signature="3369:3815" ph="..." />
+                <marker date="1497632207000" expanded="true" signature="3417:3592" ph="..." />
+                <marker date="1497632207000" expanded="true" signature="3569:3586" ph="..." />
+                <marker date="1497632207000" expanded="true" signature="3643:3796" ph="..." />
               </folding>
             </state>
           </provider>
@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="286" column="14" lean-forward="false" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
+            <state relative-caret-position="343">
+              <caret line="289" column="39" lean-forward="false" selection-start-line="289" selection-start-column="39" selection-end-line="289" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="_nav.js.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -149,6 +149,7 @@
       <find>api</find>
       <find>open</find>
       <find>console.log</find>
+      <find>split</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,13 +174,13 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/log/development.log" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/notes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/_editor.js.jsx" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/site.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx" />
       </list>
     </option>
   </component>
@@ -821,12 +822,12 @@
       <workItem from="1497521261442" duration="498000" />
       <workItem from="1497521883738" duration="26436000" />
       <workItem from="1497613160162" duration="1947000" />
-      <workItem from="1497616736935" duration="7333000" />
+      <workItem from="1497616736935" duration="9425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38707000" />
+    <option name="totallyTimeSpent" value="40799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -902,10 +903,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1497621711000" expanded="true" signature="2860:3306" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="2908:3083" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="3060:3077" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="3134:3287" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3369:3815" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3417:3592" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3569:3586" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3643:3796" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1207,19 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <marker date="1497621711000" expanded="true" signature="2860:3306" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="2908:3083" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="3060:3077" ph="..." />
-            <marker date="1497621711000" expanded="true" signature="3134:3287" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1246,6 +1234,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="289" column="39" lean-forward="false" selection-start-line="289" selection-start-column="39" selection-end-line="289" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_editor.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -1254,19 +1258,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="286" column="14" lean-forward="false" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="465">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <marker date="1497632207000" expanded="true" signature="3369:3815" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3417:3592" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3569:3586" ph="..." />
+            <marker date="1497632207000" expanded="true" signature="3643:3796" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

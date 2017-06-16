@@ -5,10 +5,12 @@ var Nav = React.createClass({
     render() {
         let id = 0;
         var notes = this.props.notes.map((note) => {
-
-            var firstLine = note.content.split('\n')[0];
-            if(firstLine.length > 20){
-                firstLine = firstLine.substring(0,20) + "...";
+            var firstLine = note.content;
+            if(note.content != null) {
+                firstLine = note.content.split('\n')[0];
+                if (firstLine.length > 20) {
+                    firstLine = firstLine.substring(0, 40) + "...";
+                }
             }
             return (
                 <li className={(note.id == this.props.currentNote.id ? 'active' : '')} key={note.id} onClick={() => this.props.openInEditor(note)}><div>
