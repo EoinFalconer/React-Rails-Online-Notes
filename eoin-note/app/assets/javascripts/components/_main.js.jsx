@@ -44,16 +44,26 @@ var Main = React.createClass({
             }
         })
     },
-
-
+    handleArrayRemove(){
+        console.log("in Main.removeCurrent")
+        var id = this.state.currentNote.id;
+        console.log("notes.length: " + notes.length)
+        var newNotes = this.state.notes.filter((note) => {
+           return note.id !=  id;
+        });
+        console.log("notes.length (new): " + notes.length)
+        this.setState({
+            notes: newNotes
+        });
+    },
     render() {
         return (
             <div className="row" style={{width: "100%"}}>
                 <div className="nav-container">
-                    <Nav openInEditor={this.openInEditor} handleNew={this.handleNew} notes={this.state.notes}/>
+                    <Nav openInEditor={this.openInEditor} handleNew={this.handleNew} notes={this.state.notes} />
                 </div>
                 <div className="editor-container">
-                    <Editor updateNote={this.updateNote} currentNote={this.state.currentNote} />
+                    <Editor handleArrayRemove={this.handleArrayRemove} updateNote={this.updateNote} currentNote={this.state.currentNote} />
                 </div>
             </div>
         )
