@@ -10,7 +10,7 @@ var Main = React.createClass({
       }
     },
     getInitialState() {
-        return { notes: [], currentNote: {content: "", title: ""} }
+        return { notes: [], currentNote: {content: "", title: ""}, searchNotes: [] }
     },
     componentWillMount() {
         $.getJSON('/api/v1/notes.json', (response) => {
@@ -18,7 +18,8 @@ var Main = React.createClass({
 
             this.setState({
                 notes: sortedNewState,
-                currentNote: sortedNewState[0]
+                currentNote: sortedNewState[0],
+                searchNotes: sortedNewState
             })
         });
 
@@ -104,11 +105,17 @@ var Main = React.createClass({
         }
         console.log("number of notes2: " + this.state.notes);
     },
+    editSearchStates(newSearchNotes) {
+        this.setState({
+            searchNotes: newSearchNotes
+        })
+    },
     render() {
         return (
             <div className="row" style={{width: "100%"}}>
                 <div className="nav-container">
-                    <Nav openInEditor={this.openInEditor} createNote={this.createNote} notes={this.state.notes} currentNote={this.state.currentNote} />
+                    <Nav openInEditor={this.openInEditor} createNote={this.createNote} notes={this.state.notes}
+                         currentNote={this.state.currentNote} searchNotes={this.state.searchNotes} editSearchStates={this.editSearchStates} />
                 </div>
                 <div className="editor-container">
                     <Editor handleDelete={this.handleDelete} updateNote={this.updateNote} currentNote={this.state.currentNote} />
