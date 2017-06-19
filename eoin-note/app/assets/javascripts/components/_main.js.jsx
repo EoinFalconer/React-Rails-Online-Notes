@@ -10,7 +10,7 @@ var Main = React.createClass({
       }
     },
     getInitialState() {
-        return { notes: [], currentNote: {content: "", title: ""}, searchNotes: [] }
+        return { notes: [], currentNote: {content: "", title: ""} }
     },
     componentWillMount() {
         $.getJSON('/api/v1/notes.json', (response) => {
@@ -19,7 +19,6 @@ var Main = React.createClass({
             this.setState({
                 notes: sortedNewState,
                 currentNote: sortedNewState[0],
-                searchNotes: sortedNewState
             })
         });
 
@@ -44,7 +43,8 @@ var Main = React.createClass({
         let sortedNewState = newState.sort((a,b) => b.created_at - a.created_at);
         this.setState({
             notes: sortedNewState,
-            currentNote: note
+            currentNote: note,
+
         });
 
     },
@@ -77,12 +77,13 @@ var Main = React.createClass({
     handleDelete() {
 
         var id = this.state.currentNote.id;
+
         console.log("to delete: " + id);
         $.ajax({
             url: `/api/v1/notes/${id}`,
             type: 'DELETE',
             success(response) {
-                console.log("removeFromArray need to occur here")
+
             }
         });
         this.removeFromArray()
@@ -105,17 +106,13 @@ var Main = React.createClass({
         }
         console.log("number of notes2: " + this.state.notes);
     },
-    editSearchStates(newSearchNotes) {
-        this.setState({
-            searchNotes: newSearchNotes
-        })
-    },
+
     render() {
         return (
             <div className="row" style={{width: "100%"}}>
                 <div className="nav-container">
                     <Nav openInEditor={this.openInEditor} createNote={this.createNote} notes={this.state.notes}
-                         currentNote={this.state.currentNote} searchNotes={this.state.searchNotes} editSearchStates={this.editSearchStates} />
+                         currentNote={this.state.currentNote}  />
                 </div>
                 <div className="editor-container">
                     <Editor handleDelete={this.handleDelete} updateNote={this.updateNote} currentNote={this.state.currentNote} />

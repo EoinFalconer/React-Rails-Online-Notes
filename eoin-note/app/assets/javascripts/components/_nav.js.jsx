@@ -1,19 +1,51 @@
 var Nav = React.createClass({
 
-    editSearch(event) {
-        var currentSearch = event.target.value;
+    getInitialState(){
+      return{
+          currentSearch: "",
+          searchNotes: []
+      }
+    },
+    componentWillMount() {
+        $.getJSON('/api/v1/notes.json', (response) => {
+            let sortedNewState = response.sort((a,b) => b.created_at - a.created_at);
+            this.setState({
+                searchNotes: sortedNewState
+            })
+        });
+    },
+    editSearch() {
         var newSearchNotes = this.props.notes.filter((note) => {
-            var lwrSearch = currentSearch.toLowerCase();
+            var lwrSearch = this.state.currentSearch.toLowerCase();
             var lwrTitle = note.title.toLowerCase();
             var lwrContent = note.content.toLowerCase();
             return lwrTitle.indexOf(lwrSearch) != -1 || lwrContent.indexOf(lwrSearch) != -1;
         });
-        this.props.editSearchStates(newSearchNotes);
+        this.setState({
+            searchNotes: newSearchNotes
+        })
     },
+    getSearch(event) {
+        if(event.target.value == ""){
+            this.setState({
+                searchNotes: this.props.notes
+            })
+        }else {
+            this.setState({
+                currentSearch: event.target.value
+            })
+            this.editSearch()
+        }
+    },
+  /*  componentWillReceiveProps(nextProps){
+        this.endSearch()
+    },*/
+
+
     render() {
         let id = 0;
 
-        var notes = this.props.searchNotes.map((note) => {
+        var notes = this.state.searchNotes.map((note) => {
             var firstLine = note.content;
             if(note.content != null) {
                 firstLine = note.content.split('\n')[0];
@@ -31,12 +63,11 @@ var Nav = React.createClass({
         return (
             <div>
                 <div className="search-container">
-                    <input onChange={this.editSearch} placeholder="Search"></input>
+                    <input  onChange={this.getSearch} placeholder="Search"></input>
                     <button onClick={this.props.createNote}>+</button>
                 </div>
                 <ul className="scrollable-nav">
                     {notes}
-
                 </ul>
             </div>
         )

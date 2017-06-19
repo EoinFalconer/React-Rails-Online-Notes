@@ -20,13 +20,13 @@
       <file leaf-file-name="_main.js.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="126" column="25" lean-forward="true" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
               <folding>
-                <marker date="1497868206000" expanded="true" signature="3552:4101" ph="..." />
-                <marker date="1497868206000" expanded="true" signature="3600:3878" ph="..." />
-                <marker date="1497868206000" expanded="true" signature="3855:3872" ph="..." />
-                <marker date="1497868206000" expanded="true" signature="3929:4082" ph="..." />
+                <marker date="1497870091000" expanded="true" signature="3309:3781" ph="..." />
+                <marker date="1497870091000" expanded="true" signature="3357:3558" ph="..." />
+                <marker date="1497870091000" expanded="true" signature="3535:3552" ph="..." />
+                <marker date="1497870091000" expanded="true" signature="3609:3762" ph="..." />
               </folding>
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="289" column="39" lean-forward="false" selection-start-line="289" selection-start-column="39" selection-end-line="289" selection-end-column="39" />
+            <state relative-caret-position="638">
+              <caret line="376" column="1" lean-forward="false" selection-start-line="376" selection-start-column="1" selection-end-line="376" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="_nav.js.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="449">
+              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -151,6 +151,8 @@
       <find>console.log</find>
       <find>split</find>
       <find>filter</find>
+      <find>searchNote</find>
+      <find>searchNotes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,8 +182,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/site.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx" />
       </list>
     </option>
   </component>
@@ -823,12 +825,12 @@
       <workItem from="1497521261442" duration="498000" />
       <workItem from="1497521883738" duration="26436000" />
       <workItem from="1497613160162" duration="1947000" />
-      <workItem from="1497616736935" duration="12408000" />
+      <workItem from="1497616736935" duration="14999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43782000" />
+    <option name="totallyTimeSpent" value="46373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -904,10 +906,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1497868206000" expanded="true" signature="3552:4101" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3600:3878" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3855:3872" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3929:4082" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3309:3781" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3357:3558" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3535:3552" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3609:3762" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1236,6 +1238,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <marker date="1497870091000" expanded="true" signature="3309:3781" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3357:3558" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3535:3552" ph="..." />
+            <marker date="1497870091000" expanded="true" signature="3609:3762" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="376" column="1" lean-forward="false" selection-start-line="376" selection-start-column="1" selection-end-line="376" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_editor.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -1244,31 +1267,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="289" column="39" lean-forward="false" selection-start-line="289" selection-start-column="39" selection-end-line="289" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_main.js.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="126" column="25" lean-forward="true" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-          <folding>
-            <marker date="1497868206000" expanded="true" signature="3552:4101" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3600:3878" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3855:3872" ph="..." />
-            <marker date="1497868206000" expanded="true" signature="3929:4082" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/_nav.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="449">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding />
         </state>
       </provider>
